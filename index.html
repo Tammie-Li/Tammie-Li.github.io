@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation">
-  <meta property="og:title" content="SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation"/>
-  <meta property="og:description" content="SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation"/>
+  <meta name="description" content="sEMG-based Gesture-Free Hand Intention Recognition: System, Dataset, Toolbox, and Benchmark Results">
+  <meta property="og:title" content="sEMG-based Gesture-Free Hand Intention Recognition: System, Dataset, Toolbox, and Benchmark Results"/>
+  <meta property="og:description" content="sEMG-based Gesture-Free Hand Intention Recognition: System, Dataset, Toolbox, and Benchmark Results"/>
   <meta property="og:url" content="Tammie-Li.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -14,8 +14,8 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation">
-  <meta name="twitter:description" content="SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation">
+  <meta name="twitter:title" content="sEMG-based Gesture-Free Hand Intention Recognition: System, Dataset, Toolbox, and Benchmark Results">
+  <meta name="twitter:description" content="sEMG-based Gesture-Free Hand Intention Recognition: System, Dataset, Toolbox, and Benchmark Results">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -57,38 +57,33 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="#" target="_blank">Wenxuan Zhang</a><sup>*,1,2</sup>
+                <a href="#" target="_blank">Hongxin Li</a><sup>*,1,2</sup>
               </span>
                 <span class="author-block">
-                  <a href="https://vinthony.github.io" target="_blank">Xiaodong Cun</a><sup>*,2</sup>
+                  <a href="https://vinthony.github.io" target="_blank">Jingsheng Tang</a><sup>*,2</sup>
                 </span>
                   <span class="author-block">
-                    <a href="https://xuanwangvc.github.io/" target="_blank">Xuan Wang</a><sup>3</sup>
+                    <a href="https://xuanwangvc.github.io/" target="_blank">Xuechao Xu</a><sup>3</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://yzhang2016.github.io" target="_blank">Yong Zhang</a><sup>2</sup>
+                    <a href="https://yzhang2016.github.io" target="_blank">Wei Dai</a><sup>2</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://xishen0220.github.io/" target="_blank">Xi Shen</a><sup>2</sup>
+                    <a href="https://xishen0220.github.io/" target="_blank">Yaru Liu</a><sup>2</sup>
                   </span>
                   <br>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yu Guo</a><sup>1</sup>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Junhao Xiao</a><sup>1</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=zh-CN" target="_blank">Ying Shan</a><sup>2</sup>
-                  </span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fei Wang</a><sup>1</sup>
+                    <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=zh-CN" target="_blank">Zongtan Zhou</a><sup>2</sup>
                   </span>
                   </div>
                   <br>
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">
-                      <sup>1</sup> Xi'an Jiaotong University &nbsp;&nbsp;&nbsp;
-                      <sup>2</sup> Tencent AI Lab &nbsp;&nbsp;&nbsp;
-                      <sup>3</sup> Ant Group
-                      <br>CVPR 2023</span>
+                      <sup>1</sup> National University of Defense Technology &nbsp;&nbsp;&nbsp;
+                      <br>TBME 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
                   <div class="column has-text-centered">
@@ -158,16 +153,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Generating talking head videos through a face image and a piece of speech audio still contains many challenges. 
-                    ie, unnatural head movement, distorted expression, and identity modification. 
-                    We argue that these issues are mainly because of learning from the coupled 2D motion fields.
-                    On the other hand, explicitly using 3D information also suffers problems of stiff expression and incoherent video.
-                    We present SadTalker, which generates 3D motion coefficients (head pose, expression) of the 3DMM from audio and implicitly modulates a novel 3D-aware face render for talking head generation.
-                    To learn the realistic motion coefficients, we explicitly model the connections between audio and different types of motion coefficients individually. 
-                    Precisely, we present ExpNet to learn the accurate facial expression from audio by distilling both coefficients and 3D-rendered faces. 
-                    As for the head pose, we design PoseVAE via a conditional VAE to synthesize head motion in different styles.
-                    Finally, the generated 3D motion coefficients are mapped to the unsupervised 3D keypoints space of the proposed face render, and synthesize the final video.
-                    We conduct extensive experiments to show the superior of our method in terms of motion and video quality.
+            Covert interaction requires effectively conveying information while avoiding being discovered by non-relevant parties, widely used in meetings and team sports. 
+            Previous methods based on gestures and eye contact had problems with inaccurate information transmission and leakage of interaction intentions. To this end, a novel 
+            gesture-free hand intention recognition scheme was proposed, that adopted surface electromyography(sEMG) and isometric contraction phenomenon to recognize different 
+            hand intentions without any gesture. Specifically, this work includes four parts: (1) the experimental system, consisting of the upper computer software, self-conducted 
+            myoelectric watch, and sports platform, is built to get sEMG signals and simulate multiple usage scenarios; (2) the paradigm is designed to standard prompt and collect 
+            the gesture-free sEMG datasets. Eight-channel signals of twelve subjects were recorded twice per subject at about one-month intervals; (3) the toolbox integrates 
+            preprocessing methods (data segmentation, filter, normalization, etc.), commonly used sEMG signal decoding algorithms, and various plotting functions, to facilitate 
+            the processing and visualization of the dataset; (4) the benchmark results of commonly used algorithms are provided. The results involve single-day, cross-day, and 
+            cross-subject experiments of 6-class and 12-class gesture-free hand intention when subjects with different sports motions. To help future research, all data, software, 
+            and algorithms are open-sourced on the following website: Project. 
           </p>
         </div>
       </div>
